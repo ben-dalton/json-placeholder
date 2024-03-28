@@ -1,31 +1,27 @@
 {
   "views": [
     {
-      "id": 1,
-      "title": "Post 1"
+      "id": "<some_shared_data_view_uuid>"
+      "name": "some_shared_data_view",
+      "created_by": "<user_id>",
+      "dimensions": [
+          {"id": "cz:resourcedisplay", "alias": "resource"},
+          {"id": "user:defined:teamname"}
+      ],
+      "granularity": "Weekly",
+      "timespan": {"value": 8, "units": "weeks"},
+      "share_to_snowflake": ["gka38767.aws_us_east_1", "xgb53000.aws_us_east_1"]
     },
     {
-      "id": 2,
-      "title": "Post 2"
-    },
-    {
-      "id": 3,
-      "title": "Post 3"
+      "id": "<some_data_view_uuid>"
+      "name": "some_data_view",
+      "created_by": "<user_id>",
+      "dimensions": [
+          {"id": "cz:resourcedisplay", "alias": "resource"}
+      ],
+      "granularity": "Weekly",
+      "timespan": {"value": 8, "units": "weeks"},
+      "share_to_snowflake": []
     }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    },
-    {
-      "id": 2,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }
