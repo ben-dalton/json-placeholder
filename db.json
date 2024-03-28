@@ -1,26 +1,43 @@
 {
   "views": [
     {
-      "id": "<some_shared_data_view_uuid>"
+      "id": "<some_shared_data_view_uuid>",
       "name": "some_shared_data_view",
       "created_by": "<user_id>",
       "dimensions": [
-          {"id": "cz:resourcedisplay", "alias": "resource"},
-          {"id": "user:defined:teamname"}
+        {
+          "id": "cz:resourcedisplay",
+          "alias": "resource"
+        },
+        {
+          "id": "user:defined:teamname"
+        }
       ],
       "granularity": "Weekly",
-      "timespan": {"value": 8, "units": "weeks"},
-      "share_to_snowflake": ["gka38767.aws_us_east_1", "xgb53000.aws_us_east_1"]
+      "timespan": {
+        "value": 8,
+        "units": "weeks"
+      },
+      "share_to_snowflake": [
+        "gka38767.aws_us_east_1",
+        "xgb53000.aws_us_east_1"
+      ]
     },
     {
-      "id": "<some_data_view_uuid>"
+      "id": "<some_data_view_uuid>",
       "name": "some_data_view",
       "created_by": "<user_id>",
       "dimensions": [
-          {"id": "cz:resourcedisplay", "alias": "resource"}
+        {
+          "id": "cz:resourcedisplay",
+          "alias": "resource"
+        }
       ],
       "granularity": "Weekly",
-      "timespan": {"value": 8, "units": "weeks"},
+      "timespan": {
+        "value": 8,
+        "units": "weeks"
+      },
       "share_to_snowflake": []
     }
   ]
