@@ -2,7 +2,7 @@
   "views": {
     "views": [
       {
-        "id": "<some_shared_data_view_uuid>",
+        "id": "1",
         "name": "some_shared_data_view",
         "created_by": "<user_id>",
         "dimensions": [
@@ -25,7 +25,7 @@
         ]
       },
       {
-        "id": "<some_data_view_uuid>",
+        "id": "2",
         "name": "some_data_view",
         "created_by": "<user_id>",
         "dimensions": [
