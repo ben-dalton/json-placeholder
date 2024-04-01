@@ -5,6 +5,7 @@
         "id": "1",
         "name": "some_shared_data_view",
         "created_by": "<user_id>",
+        "created_at": "2020-01-01T00:00:00Z",
         "dimensions": [
           {
             "id": "cz:resourcedisplay",
@@ -28,6 +29,7 @@
         "id": "2",
         "name": "some_data_view",
         "created_by": "<user_id>",
+        "created_at": "2020-01-01T00:00:00Z",
         "dimensions": [
           {
             "id": "cz:resourcedisplay",
