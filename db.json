@@ -2,46 +2,58 @@
   "views": {
     "views": [
       {
-        "id": "1",
-        "name": "some_shared_data_view",
-        "created_by": "<user_id>",
-        "created_at": "2020-01-01T00:00:00Z",
-        "dimensions": [
-          {
-            "id": "cz:resourcedisplay",
-            "alias": "resource"
-          },
-          {
-            "id": "user:defined:teamname"
-          }
+        "id": "d88cf9a8-9f46-4655-89f6-00d3d1a7bf92",
+        "created_by": "1d812685-b774-439d-a8a7-3061bb1f808a",
+        "created_at": "2024-04-10T19:35:05Z",
+        "last_updated_by": "b6f0668a-1162-4515-a61a-be518a368088",
+        "last_updated_at": "2024-04-10T19:35:05Z",
+        "missing_dimensions": [
+          "User:Defined:OldTeamName"
         ],
-        "granularity": "Weekly",
-        "timespan": {
-          "value": 8,
-          "units": "weeks"
-        },
-        "share_to_snowflake": [
-          "gka38767.aws_us_east_1",
-          "xgb53000.aws_us_east_1"
-        ]
+        "definition": {
+          "name": "shared_data_view",
+          "dimensions": {
+            "Resource": "CZ:ResourceDisplay",
+            "User:Defined:OldTeamName": "User:Defined:OldTeamName",
+            "User:Defined:TeamName": "User:Defined:TeamName"
+          },
+          "granularity": "weekly",
+          "timespan": {
+            "value": 8,
+            "unit": "weeks"
+          },
+          "share_to_snowflake": [
+            "gka38767.aws_us_east_1",
+            "xgb53000.aws_us_east_1"
+          ]
+        }
       },
       {
-        "id": "2",
-        "name": "some_data_view",
-        "created_by": "<user_id>",
-        "created_at": "2020-01-01T00:00:00Z",
-        "dimensions": [
-          {
-            "id": "cz:resourcedisplay",
-            "alias": "resource"
-          }
+        "id": "9f46-4655-89f6-00d3d1a7bf92-d88cf9a8",
+        "created_by": "1d812685-b774-439d-a8a7-3061bb1f808a",
+        "created_at": "2024-04-10T19:35:05Z",
+        "last_updated_by": "b6f0668a-1162-4515-a61a-be518a368088",
+        "last_updated_at": "2024-04-10T19:35:05Z",
+        "missing_dimensions": [
+          "User:Defined:OldTeamName"
         ],
-        "granularity": "Weekly",
-        "timespan": {
-          "value": 8,
-          "units": "weeks"
-        },
-        "share_to_snowflake": []
+        "definition": {
+          "name": "shared_data_view_2",
+          "dimensions": {
+            "Resource": "CZ:ResourceDisplay",
+            "User:Defined:OldTeamName": "User:Defined:OldTeamName",
+            "User:Defined:TeamName": "User:Defined:TeamName"
+          },
+          "granularity": "monthly",
+          "timespan": {
+            "value": 1,
+            "unit": "years"
+          },
+          "share_to_snowflake": [
+            "gka38767.aws_us_east_1",
+            "xgb53000.aws_us_east_1"
+          ]
+        }
       }
     ]
   }
